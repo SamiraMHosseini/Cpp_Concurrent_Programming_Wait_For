@@ -26,7 +26,7 @@ void waits(SharedResource& sharedRes)
 {
 	std::unique_lock<std::mutex> lk(sharedRes.cv_mutex);
 	std::cerr << "Waiting... \n";
-	//Solution1
+
 	while (!(sharedRes.cv.wait_for(lk, 3s, [&]() { return (sharedRes.counter == 1); })))
 	{
 
