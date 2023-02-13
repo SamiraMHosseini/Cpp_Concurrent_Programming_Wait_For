@@ -1,4 +1,4 @@
-# C++ Concurrent programming
+# C++ Concurrent Programming
 The wait_for method is a member function of the std::condition_variable class in the C++ Standard Library, used for waiting for a condition to be met with a timeout.
 
 The wait_for function takes three arguments:
